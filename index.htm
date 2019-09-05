@@ -1,0 +1,51 @@
+<!doctype htm>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal Website">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="webHome.png" width="800" height="800" alt="Web Home Start Page">
+            <div class="bottom-left">Amanda Wang</div>
+            <a class="center" href="start.htm">START<br>HERE</a>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Pages</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="start.htm">Start&nbsp;Here</a><a href="art.htm">Visual&nbsp;Arts</a>
+                <a href="resume.htm">Resume</a>
+                <a href="contact.htm">Contact&nbsp;Info</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        //pull down menu
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>      
+    </body>
+    <footer>
+    <p>
+        Contact Information<br>
+        Phone Number: (404) 775-4421<br>
+        Email: amandaywang@gatech.edu<br>
+        LinkedIn:https://www.linkedin.com/in/amanda-wang-1a9a94170<br>
+        Atlanta, GA
+        </p>
+    </footer>
+</html>
